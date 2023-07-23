@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facility Booking</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Facility Booking</h1>
+    <form id="bookingForm">
+        <label for="facility">Select Facility:</label>
+        <select id="facility" name="facility">
+            <option value="Clubhouse">Clubhouse</option>
+            <option value="Tennis Court">Tennis Court</option>
+        </select>
+        <br>
+        <label for="date">Booking Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <label for="startTime">Start Time:</label>
+        <input type="time" id="startTime" name="startTime">
+        <br>
+        <label for="endTime">End Time:</label>
+        <input type="time" id="endTime" name="endTime">
+        <br>
+        <button type="button" onclick="bookFacility()">Book Facility</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
